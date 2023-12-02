@@ -14,7 +14,7 @@ class User extends BaseRequest implements ApiGetRequestInterface
     /**
      * @throws \DomainException
      */
-    public function get(): EntityInterface
+    public function get(): UserListEntity
     {
         try {
             return new UserListEntity(

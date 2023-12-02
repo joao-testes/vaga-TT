@@ -1,5 +1,5 @@
 services:
-    app:
+    laravel.app:
         build:
             context: ./docker/8.2
             dockerfile: Dockerfile
@@ -10,7 +10,6 @@ services:
             - 'host.docker.internal:host-gateway'
         ports:
             - '${APP_PORT:-7080}:80'
-            - '${VITE_PORT:-5173}:${VITE_PORT:-5173}'
         environment:
             WWWUSER: '${WWWUSER}'
             LARAVEL_SAIL: 1

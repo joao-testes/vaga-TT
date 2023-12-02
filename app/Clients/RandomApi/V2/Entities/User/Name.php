@@ -9,4 +9,9 @@ class Name
         public string $lastName,
     ) {
     }
+
+    public function fullName(): string
+    {
+        return $this->firstName . ' ' . $this->lastName;
+    }
 }

@@ -16,9 +16,12 @@ class UserEntity implements EntityInterface
     public string $uid;
 
     public Name $name;
+
     public string $username;
 
     public string $email;
+
+    public string $image;
 
     public string $gender;
 
@@ -62,5 +65,6 @@ class UserEntity implements EntityInterface
             data_get($data, 'subscription.payment_method'),
             data_get($data, 'subscription.term'),
         );
+        $this->image = data_get($data, 'avatar');
     }
 }
