@@ -35,15 +35,9 @@ Inicio o docker e instale os pacotes do npm:
 ```
 vendor/bin/sail up -d
 vendor/bin/sail artisan key:generate
-vendor/bin/sail npm install
-vendor/bin/sail npm run build
 ```
 
-Por fim inicie o npm e vá para a [aplicação](http://localhost:7080/) 
-
-```
-vendor/bin/sail npm run dev
-```
+Por fim vá para a [aplicação](http://localhost:7080/) 
 
 ## 🛠️ Construído com
 
